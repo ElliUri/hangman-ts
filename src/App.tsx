@@ -4,6 +4,7 @@ import words from "./wordList.json";
 import HandmanDrawing from "./HandmanDrawing";
 import HandmanWord from "./HandmanWord";
 import Keyboard from "./Keyboard";
+import Snow from "./Snow";
 
 function getWord() {
   return words[Math.floor(Math.random() * words.length)];
@@ -60,6 +61,7 @@ function App() {
   }, [])
   return (
     <div className="main">
+   <Snow />
       <div className="lose">
         {isWinner && 'Winner!  - Refresh to try again'}
         {isLoser && 'Nice try - Refresh to try again'}

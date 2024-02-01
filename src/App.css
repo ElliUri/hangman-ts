@@ -11,3 +11,8 @@
     font-size: 2rem;
     text-align: center;
 }
+
+body {
+    background-image: url(./assets/zyro-image.png ) ;
+    background-size: 100%;
+}
